@@ -1,15 +1,4 @@
-import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
-
-const loginUser = createAsyncThunk(
-  "auth/login",
-  async ({ email, password }: { email: string; password: string }) => {
-    const response = await fetch("/api/loginUser", {
-      method: "POST",
-      body: JSON.stringify({ email, password }),
-    });
-    return response.json();
-  },
-);
+import { createSlice } from "@reduxjs/toolkit";
 
 interface AuthState {
   user: any;

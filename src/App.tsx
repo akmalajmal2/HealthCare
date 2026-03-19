@@ -3,7 +3,6 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { auth } from "./firebase/config";
 import Dashboard from "./pages/Dashboard";
 import Register from "./pages/Register";
-import Profile from "./pages/Profile";
 import Layout from "./components/Layout";
 import NotFound from "./pages/NotFound";
 import { useDispatch } from "react-redux";
